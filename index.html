@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evolution of Internet</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+<div id="loader">
+  <div class="spinner"></div>
+  <p>Initializing Internet...</p>
+</div>
+<!-- Progress Bar -->
+<div id="progress"></div>
+
+<nav class="navbar">
+  <h2 class="logo">InterNetStory</h2>
+
+  <ul class="nav-links">
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#Beginning">Start</a></li>
+    <li><a href="#Web">Web</a></li>
+    <li><a href="#Social">Social</a></li>
+    <li><a href="#Future">Future</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section id="Home" class="hero">
+  <h1>Evolution Of Internet</h1>
+  <p>
+    From a single connection to a global revolution —  
+    explore how the internet transformed humanity.
+  </p>
+</section>
+
+<!-- Section 1 -->
+<section class="section fade flex-section img" id="Beginning">
+    <div class="text">
+  <h2>1969 — The Beginning</h2>
+  <p>
+    In a quiet laboratory, two computers communicated for the first time.  
+    It wasn’t just a technical experiment — it was the birth of a new world.
+  </p>
+
+  <p>
+    ARPANET, the first network, laid the foundation of what would later become the Internet.  
+    No one knew that this small connection would change the future of humanity forever.
+  </p>
+  </div>
+  <div class="image">
+    <img src="internet-history.jpg" alt="ARPANET">
+  </div>
+
+</section>
+
+<!--section 2-->
+<section class="section fade flex-section img" id="Web">
+  <h2>1991 — The Web Revolution</h2>
+
+  <p>
+    The internet was no longer limited to scientists.  
+    The World Wide Web opened the digital world to everyone.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Websites</h3>
+      <p>People could finally share information globally.</p>
+    </div>
+
+    <div class="card">
+      <h3>E-Commerce</h3>
+      <p>Shopping moved from streets to screens.</p>
+    </div>
+
+    <div class="card">
+      <h3>Search Engines</h3>
+      <p>Information became searchable and organized.</p>
+    </div>
+  </div>
+
+  </section>
+
+
+<!-- Section 3 -->
+<section class="section fade flex-section img" id="Social">
+  <div class="image">
+    <img src="digital-revolution.png" alt="ARPANET">
+  </div>
+
+     <div class="text">
+  <h2>2005 — The Social Revolution</h2>
+
+  <p>
+    The internet became more than information — it became connection.
+  </p>
+
+  <p>
+    Platforms allowed people to share moments, ideas, and emotions instantly.  
+    We didn’t just use the internet… we lived on it.
+  </p>
+  </div>
+
+</section>
+
+<!-- Section 4 -->
+<section class="section fade flex-section img" >
+    <div class="text">
+  <h2>2015 — The Mobile Era</h2>
+
+  <p>
+    The internet left the desk and entered our pockets.  
+    Smartphones made it accessible anytime, anywhere.
+  </p>
+
+  <p>
+    From communication to entertainment, everything became instant and portable.
+  </p>
+  </div>
+
+  <div class="image">
+    <img src="mobile-era.png" alt="ARPANET">
+  </div>
+</section>
+
+<!-- Section 5 -->
+<section class="section fade flex-section img1">
+
+  <!-- TEXT -->
+  <div class="text">
+    <h2>2025 — The Intelligent Internet</h2>
+
+    <p>
+      Today, the internet is no longer just a network — it is intelligent.
+    </p>
+
+    <p>
+      Artificial Intelligence is transforming how we interact, learn, and live.  
+      The internet doesn’t just connect us anymore… it understands us.
+    </p>
+  </div>
+
+  <!-- GLOBE -->
+  <div class="image">
+    <canvas id="globe"></canvas>
+  </div>
+
+</section>
+
+<!-- Section 6 -->
+
+<section class="section fade flex-section img" id="Future">
+    <div class="text">
+  <h2>The Future Begins Now</h2>
+
+  <p>
+    From a single connection in 1969 to an intelligent global system —  
+    the journey of the internet is far from over.
+  </p>
+
+  <p>
+    The next chapter is being written right now… and you are part of it.
+  </p>
+
+  <button class="future-btn">Enter the Future</button>
+  </div>
+
+  <div class="image">
+    <img src="AI.avif" alt="ARPANET">
+  </div>
+</section>
+
+<!-- Chatbot -->
+
+
+<section class="ai-section">
+  <h2>Ask AI About Future</h2>
+  <div class="chat-box">
+    <input type="text" id="userInput" placeholder="Ask something about AI...">
+    <button onclick="askAI()">Ask AI </button>
+  </div>
+
+  <p id="response"></p>
+</section>
+
+<script src="script.js"></script>
+<script src="globe.js"></script>
+</body>
+</html>
